@@ -14,13 +14,13 @@ from dotenv import load_dotenv
 load_dotenv("config.env")
 
 
-API_HASH = getenv("API_HASH")
-API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("ba64ca38a4cbdc0cd7bde7bd040cd81d")
+API_ID = int(getenv("2277665", ""))
 BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001473548283]
+    BLACKLIST_CHAT = [-1001388720590]
 BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
-BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
+BOTLOG_CHATID = int(getenv("-1001388720590") or 0)
 BOT_VER = "0.2.0@main"
 BRANCH = getenv("BRANCH", "main")
 CHANNEL = getenv("CHANNEL", "Lunatic0de")
